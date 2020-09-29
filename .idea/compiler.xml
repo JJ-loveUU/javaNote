@@ -7,18 +7,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springbootWithRabbitmq" />
         <module name="javaNote" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="demo" target="8" />
-      <module name="demo2" target="8" />
+      <module name="demo" target="1.8" />
+      <module name="hahah" target="1.8" />
+      <module name="testdocker" target="1.8" />
+      <module name="testDocker2" target="1.8" />
+      <module name="testdocker2" target="1.8" />
+      <module name="testSpringboot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
-      <module name="demo2" options="-parameters" />
+      <module name="hahah" options="-parameters" />
+      <module name="javaNote" options="" />
+      <module name="springbootWithRabbitmq" options="-parameters" />
+      <module name="springbootWithRabbitmqConsumer2" options="-parameters" />
+      <module name="testDocker2" options="-parameters" />
+      <module name="testSpringboot" options="-parameters" />
+      <module name="testdocker" options="-parameters" />
+      <module name="testdocker2" options="-parameters" />
     </option>
   </component>
 </project>
