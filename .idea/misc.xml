@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/resttemplate" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/springbootWithRabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/springbootWithRabbitmqConsumer2/pom.xml" />
+        <option value="$PROJECT_DIR$/resttemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/webservicetest/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/springbootWithRabbitmqConsumer2/mybatisPlus/pom.xml" />
+        <option value="$PROJECT_DIR$/test-webservice/pom.xml" />
       </set>
     </option>
   </component>

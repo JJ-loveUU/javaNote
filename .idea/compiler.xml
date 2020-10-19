@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="webservicetest" />
+        <module name="resttemplate" />
         <module name="springbootWithRabbitmq" />
-        <module name="javaNote" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -18,6 +19,8 @@
       <module name="testDocker2" target="1.8" />
       <module name="testdocker2" target="1.8" />
       <module name="testSpringboot" target="1.8" />
+      <module name="testwebservice" target="8" />
+      <module name="webservice-test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -26,12 +29,16 @@
       <module name="demo" options="-parameters" />
       <module name="hahah" options="-parameters" />
       <module name="javaNote" options="" />
+      <module name="resttemplate" options="-parameters" />
       <module name="springbootWithRabbitmq" options="-parameters" />
       <module name="springbootWithRabbitmqConsumer2" options="-parameters" />
       <module name="testDocker2" options="-parameters" />
       <module name="testSpringboot" options="-parameters" />
       <module name="testdocker" options="-parameters" />
       <module name="testdocker2" options="-parameters" />
+      <module name="testwebservice" options="" />
+      <module name="webservice-test" options="-parameters" />
+      <module name="webservicetest" options="-parameters" />
     </option>
   </component>
 </project>
