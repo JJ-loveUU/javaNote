@@ -35,5 +35,16 @@ public class Test {
     Optional<String> s = employee1.map(e -> e.getName());
 //    如果name的值不存在就返回default的值
     System.out.println(s.orElse("default"));
+
+
+  }
+
+  @org.junit.Test
+  public void test2(){
+    Employee employee = new Employee();
+    employee.setName("a");
+//    String null_str = Optional.ofNullable(employee).map(e -> e.getName()).orElse("null Str");
+    Employee null_str = Optional.ofNullable(employee).filter(e -> e.getName()!="").orElse(new Employee());
+    System.out.println(null_str);
   }
 }

@@ -87,12 +87,12 @@ public class Test {
     list.add(new Employee("d", 40));
     list.add(new Employee("d", 40));
     list.add(new Employee("d", 40));
-
+    List<Integer> collect = list.stream().map(Employee::getAge).collect(Collectors.toList());
     //中间操作
-    Stream<Employee> stream1 = list.stream().filter(x -> {
+    List<Employee> stream1 = list.stream().filter(x -> {
       System.out.println("中间操作");
       return x.getAge() > 10;
-    });
+    }).collect(Collectors.toList());
 
     //终止操作
 //    stream1.limit(1).forEach(System.out::println);
@@ -327,6 +327,16 @@ public class Test {
     Instant end = Instant.now();
     //获取时间间隔
     System.out.println(Duration.between(now, end).getSeconds());
+  }
+
+  @org.junit.Test
+  public void test7(){
+    ArrayList<String> list = new ArrayList<>();
+    list.add("1");
+    list.add("2");
+    list.add("3");
+    List<String> collect = list.stream().filter(e -> e != "1").collect(Collectors.toList());
+    list.forEach(System.out::println);
   }
 
 

@@ -8,6 +8,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Service;
 
+import javax.jws.WebParam;
 import javax.jws.WebService;
 
 @WebService
@@ -17,7 +18,7 @@ public class TestServiceImpl implements TestService{
   private Log log = LogFactory.getLog(TestServiceImpl.class);
 
   @Override
-  public String hiWebService(String s) {
+  public String hiWebService(@WebParam(name = "hi")String s) {
     String msg = "获取内容："+s;
     log.info(msg);
     return msg;
