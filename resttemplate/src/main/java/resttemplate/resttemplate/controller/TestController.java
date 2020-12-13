@@ -27,7 +27,7 @@ public class TestController {
     User book = new User();
     book.setUsername("红楼梦");
     book.setPassword("红楼梦2");
-    ResponseEntity<User> responseEntity = restTemplate.postForEntity("http://440d3a0f.nat123.fun:47419/resttemplate-0.0.1-SNAPSHOT/test3", book, User.class);
+    ResponseEntity<User> responseEntity = restTemplate.postForEntity("http://localhost/test3", book, User.class);
     return responseEntity.getBody();
   }
 
